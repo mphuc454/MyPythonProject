@@ -1,21 +1,25 @@
 import numpy as np
-arr = np.array([[5,8],
-                [1,10],
-                [31,67]])
-# print(arr.reshape(3,2,-1))
-for i, x in np.ndenumerate(arr):
-    print(i, x)
-# x = arr.copy()
-# x = arr.view()
-# x[1,0:] = [75,55]
-# print(x)
-# arr = np.array([[5,8],
-#                 [1,10],
-#                 [31,67]], dtype='f')
-# print(arr[2] +arr[0])
-# print(arr[0,1])
-# print(arr[1,0:2])
-# print(arr)
+# arr = np.array([[5,6],[7,8],[111,232]], dtype=np.float32)
 # print(arr.shape)
-# print(x.base)
-# print(arr.dtype)
+# print(arr.ndim)
+# print(arr.size)
+# new_arr = np.zeros([3,5])
+# new_arr = np.arange(0, 21, 2)
+# new_arr = np.full([2,3], 5)
+# new_arr = np.linspace(3, 10, 5)
+# print(new_arr)
+# arr = np.linspace(0, 10, 5)
+# arr = np.random.randint(10, size=(3,4))
+# print(arr
+# print()
+# print(arr[:2, :3 :2])
+# arr = np.random.random(100)
+# print(np.sum(arr))
+# print(np.mean(arr))
+# print(np.max(arr))
+# print(np.min(arr))
+# print(np.var(arr))
+# print(np.std(arr))
+# print(np.concatenate((arr, arr), axis=0))
+# print(np.split(arr, [0,2]))
+# print(arr.reshape(2,3).T)

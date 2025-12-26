@@ -1,0 +1,13 @@
+from collections import deque
+num = deque()
+num.append(3)
+num.append(4)
+num.append(5)
+num.appendleft(109)
+# print(num)
+# print(num.pop())
+# print(num)
+num.extendleft((3,4,5))
+# print(num)
+num.rotate(180)
+print(num)

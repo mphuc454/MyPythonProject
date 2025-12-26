@@ -1,19 +1,22 @@
 import pandas as pd
 
-df = pd.read_csv(r'D:\ThuMucCuaTui\Programmer\DataMining\File\chipotle.csv', sep="\t")
-# print(df.head(5))
-# print(df.shape)
+
+df = pd.read_csv(r'D:\ThuMucCuaTui\Programmer\PythonProject\DataMining-Demo\File\chipotle.csv', sep="\t")
+# df.fillna(df["choice_description"]=="Something", inplace=True)
+# print(df.to_string())
+print(df.head(10))
+# print(df.tail().to_string())
 # print(df.info())
-# print(df.columns.tolist())
-print(df.describe(include='all'))
-# print(df.index)
-# print(df.loc[(df.quantity == 2) & (df.item_name == "Chicken Bowl"), ['order_id','quantity','item_name']])
-# print(df.iloc[:11, 0:3])
-# print(df.item_price.apply(lambda x : x.replace('$','')))
-# df.item_price = df.item_price.apply(lambda x : float(x.replace('$','')))
-# df["total_price"] = df["quantity"] * df["item_price"]
-# s =df.groupby("item_name")["quantity"].sum()
-# print(s.sort_values())
-# print(df.item_name.value_counts().count())
-# print(df.item_name.nunique())
+# new_df = df.dropna()
+# print(new_df.info())
+# a = [0,5,6]
+# my_num = pd.Series(a)
+# print(my_num)
+# data = {
+#     "Height":[340,200, 150],
+#     "Weight":[1009, 2001,None]
+# }
+# df = pd.DataFrame(data)
+# # print(df)
+# print(df.loc[0])
 
